@@ -1,6 +1,6 @@
-package com.zjt.androidexample.activities;
+package com.ting.androidexample.activities;
 
-import com.zjt.androidexample.R;
+import com.ting.androidexample.R;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -13,6 +13,11 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
+
+/**
+ * @author tingzi
+ *
+ */
 public class DownloadActivity extends Activity {
 	
 	private DownloadManager mDownloadManager = null;

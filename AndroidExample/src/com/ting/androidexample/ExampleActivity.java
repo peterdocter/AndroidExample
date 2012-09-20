@@ -1,6 +1,6 @@
-package com.zjt.androidexample;
+package com.ting.androidexample;
 
-import com.zjt.androidexample.activities.DownloadActivity;
+import com.ting.androidexample.activities.DownloadActivity;
 
 import android.os.Bundle;
 import android.app.Activity;
@@ -10,6 +10,11 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
+
+/**
+ * @author tingzi
+ *
+ */
 public class ExampleActivity extends Activity {
 
     @Override
