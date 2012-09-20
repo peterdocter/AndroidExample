@@ -12,7 +12,7 @@ import android.widget.Button;
 
 
 /**
- * @author tingzi
+ * @author tingzi [zhangjieting@gmail.com]
  *
  */
 public class ExampleActivity extends Activity {
