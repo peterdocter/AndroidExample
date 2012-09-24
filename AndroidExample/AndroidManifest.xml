@@ -28,6 +28,9 @@
             android:name="com.ting.androidexample.activities.DownloadActivity"
             android:label="@string/download" >
         </activity>
+        <activity android:name=".AIDLActivity"/>
+        <service android:name=".ClientService"/>
+        <service android:name=".AIDLService"/>
     </application>
 
 </manifest>
