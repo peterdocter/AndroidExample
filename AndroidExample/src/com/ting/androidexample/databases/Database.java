@@ -9,6 +9,10 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+/**
+ * @author tingzi [zhangjieting@gmail.com]
+ *
+ */
 public class Database {
 	
 	private static DbOpenHelper mDbHelper;
