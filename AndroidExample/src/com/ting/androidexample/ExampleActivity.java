@@ -1,5 +1,6 @@
 package com.ting.androidexample;
 
+import com.ting.androidexample.activities.AlertDialogActivity;
 import com.ting.androidexample.activities.DownloadActivity;
 
 import android.os.Bundle;
@@ -9,6 +10,7 @@ import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.LinearLayout;
 
 
 /**
@@ -20,7 +22,6 @@ public class ExampleActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_example);
         
         setupViews();
     }
@@ -32,7 +33,12 @@ public class ExampleActivity extends Activity {
     }
     
     private void setupViews() {
-    	Button button1 = (Button) findViewById(R.id.button1);
+    	LinearLayout linearLayout = new LinearLayout(this);
+    	linearLayout.setOrientation(LinearLayout.VERTICAL);
+  
+    	//add button1
+    	Button button1 = new Button(this);
+    	button1.setText("Download");
     	button1.setOnClickListener(new OnClickListener() {
 
 			@Override
@@ -43,5 +49,23 @@ public class ExampleActivity extends Activity {
 			}
     		
     	});
+    	linearLayout.addView(button1);
+    	
+    	//add button2
+    	Button button2 = new Button(this);
+    	button2.setText("AlertDialog");
+    	button2.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View arg0) {
+				Intent intent = new Intent();
+				intent.setClass(getApplicationContext(), AlertDialogActivity.class);
+				startActivity(intent);
+			}
+    		
+    	});
+    	linearLayout.addView(button2);
+    	
+    	setContentView(linearLayout);
     }
 }

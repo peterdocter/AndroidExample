@@ -24,13 +24,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.ting.androidexample.activities.DownloadActivity"
-            android:label="@string/download" >
-        </activity>
-        <activity android:name=".AIDLActivity"/>
-        <service android:name=".ClientService"/>
-        <service android:name=".AIDLService"/>
+        <activity android:name=".activities.DownloadActivity"/>
+        <activity android:name=".activities.AIDLActivity"/>
+        <activity android:name=".activities.AlertDialogActivity"/>
+        <service android:name=".services.ClientService"/>
+        <service android:name=".services.AIDLService"/>
     </application>
 
 </manifest>

@@ -5,6 +5,10 @@ import android.content.Intent;
 import android.os.IBinder;
 import android.os.RemoteException;
 
+/**
+ * @author tingzi [zhangjieting@gmail.com]
+ *
+ */
 public class AIDLService extends Service {
 	
 	private final IAIDLService.Stub mBinder = new IAIDLService.Stub() {

@@ -11,6 +11,10 @@ import android.os.Bundle;
 import android.os.IBinder;
 import android.os.RemoteException;
 
+/**
+ * @author tingzi [zhangjieting@gmail.com]
+ *
+ */
 public class AIDLActivity extends Activity {
 	
 	private IAIDLService mIAIDLService;
