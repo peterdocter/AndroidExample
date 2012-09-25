@@ -29,6 +29,7 @@
         <activity android:name=".activities.AlertDialogActivity"/>
         <service android:name=".services.ClientService"/>
         <service android:name=".services.AIDLService"/>
+        <service android:name=".services.LocalServerSocketService"/>
     </application>
 
 </manifest>
