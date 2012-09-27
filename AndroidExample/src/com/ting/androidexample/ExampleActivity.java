@@ -3,6 +3,7 @@ package com.ting.androidexample;
 import com.ting.androidexample.activities.AlertDialogActivity;
 import com.ting.androidexample.activities.DownloadActivity;
 import com.ting.androidexample.activities.DragListViewActivity;
+import com.ting.androidexample.activities.JsonActivity;
 import com.ting.androidexample.activities.NotificationActivity;
 
 import android.os.Bundle;
@@ -97,6 +98,21 @@ public class ExampleActivity extends Activity {
     		
     	});
     	linearLayout.addView(button4);
+    	
+    	//add button4
+    	Button button5 = new Button(this);
+    	button5.setText("Json");
+    	button5.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View arg0) {
+				Intent intent = new Intent();
+				intent.setClass(getApplicationContext(), JsonActivity.class);
+				startActivity(intent);
+			}
+    		
+    	});
+    	linearLayout.addView(button5);
     	
     	setContentView(linearLayout);
     }
