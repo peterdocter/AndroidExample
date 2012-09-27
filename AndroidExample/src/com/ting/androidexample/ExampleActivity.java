@@ -3,6 +3,7 @@ package com.ting.androidexample;
 import com.ting.androidexample.activities.AlertDialogActivity;
 import com.ting.androidexample.activities.DownloadActivity;
 import com.ting.androidexample.activities.DragListViewActivity;
+import com.ting.androidexample.activities.NotificationActivity;
 
 import android.os.Bundle;
 import android.app.Activity;
@@ -67,7 +68,7 @@ public class ExampleActivity extends Activity {
     	});
     	linearLayout.addView(button2);
     	
-    	//add button2
+    	//add button3
     	Button button3 = new Button(this);
     	button3.setText("DragListView");
     	button3.setOnClickListener(new OnClickListener() {
@@ -81,6 +82,21 @@ public class ExampleActivity extends Activity {
     		
     	});
     	linearLayout.addView(button3);
+    	
+    	//add button4
+    	Button button4 = new Button(this);
+    	button4.setText("Notification");
+    	button4.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View arg0) {
+				Intent intent = new Intent();
+				intent.setClass(getApplicationContext(), NotificationActivity.class);
+				startActivity(intent);
+			}
+    		
+    	});
+    	linearLayout.addView(button4);
     	
     	setContentView(linearLayout);
     }

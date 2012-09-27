@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
 
     <uses-sdk
         android:minSdkVersion="8"
@@ -28,6 +29,7 @@
         <activity android:name=".activities.AIDLActivity"/>
         <activity android:name=".activities.AlertDialogActivity"/>
         <activity android:name=".activities.DragListViewActivity"/>
+        <activity android:name=".activities.NotificationActivity"/>
         
         <service android:name=".services.ClientService"/>
         <service android:name=".services.AIDLService"/>
