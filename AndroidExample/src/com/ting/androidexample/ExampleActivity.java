@@ -2,6 +2,7 @@ package com.ting.androidexample;
 
 import com.ting.androidexample.activities.AlertDialogActivity;
 import com.ting.androidexample.activities.DownloadActivity;
+import com.ting.androidexample.activities.DragListViewActivity;
 
 import android.os.Bundle;
 import android.app.Activity;
@@ -65,6 +66,21 @@ public class ExampleActivity extends Activity {
     		
     	});
     	linearLayout.addView(button2);
+    	
+    	//add button2
+    	Button button3 = new Button(this);
+    	button3.setText("DragListView");
+    	button3.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View arg0) {
+				Intent intent = new Intent();
+				intent.setClass(getApplicationContext(), DragListViewActivity.class);
+				startActivity(intent);
+			}
+    		
+    	});
+    	linearLayout.addView(button3);
     	
     	setContentView(linearLayout);
     }

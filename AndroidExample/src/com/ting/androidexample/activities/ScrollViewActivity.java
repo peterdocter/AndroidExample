@@ -1,4 +1,4 @@
-package com.ting.androidexample.ui;
+package com.ting.androidexample.activities;
 
 import android.app.Activity;
 import android.os.Bundle;

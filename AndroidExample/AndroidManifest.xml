@@ -27,6 +27,8 @@
         <activity android:name=".activities.DownloadActivity"/>
         <activity android:name=".activities.AIDLActivity"/>
         <activity android:name=".activities.AlertDialogActivity"/>
+        <activity android:name=".activities.DragListViewActivity"/>
+        
         <service android:name=".services.ClientService"/>
         <service android:name=".services.AIDLService"/>
         <service android:name=".services.LocalServerSocketService"/>
