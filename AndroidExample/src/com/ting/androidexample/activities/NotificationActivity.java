@@ -15,6 +15,10 @@ import android.widget.LinearLayout;
 
 import com.ting.androidexample.R;
 
+/**
+ * @author tingzi [zhangjieting@gmail.com]
+ *
+ */
 public class NotificationActivity extends Activity {
 	
 	private final String TAG = "NotificationActivity";

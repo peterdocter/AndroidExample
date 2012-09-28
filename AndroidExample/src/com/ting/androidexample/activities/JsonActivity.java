@@ -7,6 +7,10 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 
+/**
+ * @author tingzi [zhangjieting@gmail.com]
+ *
+ */
 public class JsonActivity extends Activity {
 
 	private final String TAG = "JsonActivity";
