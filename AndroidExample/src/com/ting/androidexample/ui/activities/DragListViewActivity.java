@@ -1,10 +1,10 @@
-package com.ting.androidexample.activities;
+package com.ting.androidexample.ui.activities;
 import java.util.ArrayList;
 import java.util.List;
 
 import com.ting.androidexample.R;
-import com.ting.androidexample.widget.DragListView;
-import com.ting.androidexample.widget.DragListView.DropViewListener;
+import com.ting.androidexample.ui.widget.DragListView;
+import com.ting.androidexample.ui.widget.DragListView.DropViewListener;
 
 import android.app.Activity;
 import android.content.Context;
