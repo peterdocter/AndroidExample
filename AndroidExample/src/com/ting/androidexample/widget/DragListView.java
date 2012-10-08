@@ -1,4 +1,4 @@
-package com.ting.androidexample.ui.widget;
+package com.ting.androidexample.widget;
 
 import com.ting.androidexample.R;
 

@@ -1,4 +1,4 @@
-package com.ting.androidexample.ui.activities;
+package com.ting.androidexample.activities;
 
 import org.json.JSONException;
 import org.json.JSONObject;

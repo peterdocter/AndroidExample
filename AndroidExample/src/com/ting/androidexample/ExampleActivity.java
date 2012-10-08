@@ -1,10 +1,10 @@
 package com.ting.androidexample;
 
-import com.ting.androidexample.ui.activities.AlertDialogActivity;
-import com.ting.androidexample.ui.activities.DownloadActivity;
-import com.ting.androidexample.ui.activities.DragListViewActivity;
-import com.ting.androidexample.ui.activities.JsonActivity;
-import com.ting.androidexample.ui.activities.NotificationActivity;
+import com.ting.androidexample.activities.AlertDialogActivity;
+import com.ting.androidexample.activities.DownloadActivity;
+import com.ting.androidexample.activities.DragListViewActivity;
+import com.ting.androidexample.activities.JsonActivity;
+import com.ting.androidexample.activities.NotificationActivity;
 
 import android.os.Bundle;
 import android.app.Activity;

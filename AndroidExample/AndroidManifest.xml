@@ -30,7 +30,7 @@
         <activity android:name=".activities.AlertDialogActivity"/>
         <activity android:name=".activities.DragListViewActivity"/>
         <activity android:name=".activities.NotificationActivity"/>
-        <activity android:name=".ui.activities.JsonActivity"/>
+        <activity android:name=".activities.JsonActivity"/>
         
         <service android:name=".services.ClientService"/>
         <service android:name=".services.AIDLService"/>

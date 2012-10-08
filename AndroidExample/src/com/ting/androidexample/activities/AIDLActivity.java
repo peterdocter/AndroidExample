@@ -1,4 +1,4 @@
-package com.ting.androidexample.ui.activities;
+package com.ting.androidexample.activities;
 
 import com.ting.androidexample.services.IAIDLService;
 
