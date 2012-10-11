@@ -128,5 +128,22 @@ public class ExampleActivity extends Activity {
     	linearLayout.addView(button6);
     	
     	setContentView(linearLayout);
+    	
+    	//add button7
+    	Button button7 = new Button(this);
+    	button7.setText("MutiParamActivity");
+    	button7.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View arg0) {
+				Intent intent = new Intent();
+				intent.setClass(getApplicationContext(), MutiParamActivity.class);
+				startActivity(intent);
+			}
+    		
+    	});
+    	linearLayout.addView(button7);
+    	
+    	setContentView(linearLayout);
     }
 }
