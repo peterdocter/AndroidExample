@@ -1,19 +1,15 @@
-package com.ting.androidexample;
+package com.ting.androidexample.ui.activities;
 
-import com.ting.androidexample.ui.activities.AlertDialogActivity;
-import com.ting.androidexample.ui.activities.DownloadActivity;
-import com.ting.androidexample.ui.activities.DragListViewActivity;
-import com.ting.androidexample.ui.activities.JsonActivity;
-import com.ting.androidexample.ui.activities.NotificationActivity;
-
-import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.LinearLayout;
+
+import com.ting.androidexample.R;
 
 
 /**
@@ -99,7 +95,7 @@ public class ExampleActivity extends Activity {
     	});
     	linearLayout.addView(button4);
     	
-    	//add button4
+    	//add button5
     	Button button5 = new Button(this);
     	button5.setText("Json");
     	button5.setOnClickListener(new OnClickListener() {
@@ -113,6 +109,23 @@ public class ExampleActivity extends Activity {
     		
     	});
     	linearLayout.addView(button5);
+    	
+    	setContentView(linearLayout);
+    	
+    	//add button6
+    	Button button6 = new Button(this);
+    	button6.setText("StringBuilderActivity");
+    	button6.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View arg0) {
+				Intent intent = new Intent();
+				intent.setClass(getApplicationContext(), StringBuilderActivity.class);
+				startActivity(intent);
+			}
+    		
+    	});
+    	linearLayout.addView(button6);
     	
     	setContentView(linearLayout);
     }

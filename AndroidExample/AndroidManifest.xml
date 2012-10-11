@@ -17,7 +17,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".ExampleActivity"
+            android:name=".ui.activities.ExampleActivity"
             android:label="@string/title_activity_example" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,12 +25,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.DownloadActivity"/>
-        <activity android:name=".activities.AIDLActivity"/>
-        <activity android:name=".activities.AlertDialogActivity"/>
-        <activity android:name=".activities.DragListViewActivity"/>
-        <activity android:name=".activities.NotificationActivity"/>
+        <activity android:name=".ui.activities.DownloadActivity"/>
+        <activity android:name=".ui.activities.AIDLActivity"/>
+        <activity android:name=".ui.activities.AlertDialogActivity"/>
+        <activity android:name=".ui.activities.DragListViewActivity"/>
+        <activity android:name=".ui.activities.NotificationActivity"/>
         <activity android:name=".ui.activities.JsonActivity"/>
+        <activity android:name=".ui.activities.StringBuilderActivity"/>
         
         <service android:name=".services.ClientService"/>
         <service android:name=".services.AIDLService"/>
