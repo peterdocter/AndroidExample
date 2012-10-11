@@ -32,7 +32,7 @@
         <activity android:name=".ui.activities.NotificationActivity"/>
         <activity android:name=".ui.activities.JsonActivity"/>
         <activity android:name=".ui.activities.StringBuilderActivity"/>
-        <activity android:name=".ui.activities.MutiParamActivity"/>
+        <activity android:name=".ui.activities.MultiParamActivity"/>
         
         <service android:name=".services.ClientService"/>
         <service android:name=".services.AIDLService"/>

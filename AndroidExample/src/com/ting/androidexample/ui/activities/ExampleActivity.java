@@ -137,7 +137,7 @@ public class ExampleActivity extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				Intent intent = new Intent();
-				intent.setClass(getApplicationContext(), MutiParamActivity.class);
+				intent.setClass(getApplicationContext(), MultiParamActivity.class);
 				startActivity(intent);
 			}
     		
