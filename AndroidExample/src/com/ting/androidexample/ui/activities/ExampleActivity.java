@@ -110,8 +110,6 @@ public class ExampleActivity extends Activity {
     	});
     	linearLayout.addView(button5);
     	
-    	setContentView(linearLayout);
-    	
     	//add button6
     	Button button6 = new Button(this);
     	button6.setText("StringBuilderActivity");
@@ -127,8 +125,6 @@ public class ExampleActivity extends Activity {
     	});
     	linearLayout.addView(button6);
     	
-    	setContentView(linearLayout);
-    	
     	//add button7
     	Button button7 = new Button(this);
     	button7.setText("MutiParamActivity");
@@ -143,6 +139,36 @@ public class ExampleActivity extends Activity {
     		
     	});
     	linearLayout.addView(button7);
+    	
+    	//add button8
+    	Button button8 = new Button(this);
+    	button8.setText("ReflexActivity");
+    	button8.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View arg0) {
+				Intent intent = new Intent();
+				intent.setClass(getApplicationContext(), ReflexActivity.class);
+				startActivity(intent);
+			}
+    		
+    	});
+    	linearLayout.addView(button8);
+    	
+    	//add button9
+    	Button button9 = new Button(this);
+    	button9.setText("KeyguardActivity");
+    	button9.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View arg0) {
+				Intent intent = new Intent();
+				intent.setClass(getApplicationContext(), KeyguardActivity.class);
+				startActivity(intent);
+			}
+    		
+    	});
+    	linearLayout.addView(button9);
     	
     	setContentView(linearLayout);
     }

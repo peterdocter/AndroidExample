@@ -33,6 +33,8 @@
         <activity android:name=".ui.activities.JsonActivity"/>
         <activity android:name=".ui.activities.StringBuilderActivity"/>
         <activity android:name=".ui.activities.MultiParamActivity"/>
+        <activity android:name=".ui.activities.ReflexActivity"/>
+        <activity android:name=".ui.activities.KeyguardActivity"/>
         
         <service android:name=".services.ClientService"/>
         <service android:name=".services.AIDLService"/>
