@@ -170,6 +170,21 @@ public class ExampleActivity extends Activity {
     	});
     	linearLayout.addView(button9);
     	
+    	//add button10
+    	Button button10 = new Button(this);
+    	button10.setText("ResolveInfoActivity");
+    	button10.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View arg0) {
+				Intent intent = new Intent();
+				intent.setClass(getApplicationContext(), ResolveInfoActivity.class);
+				startActivity(intent);
+			}
+    		
+    	});
+    	linearLayout.addView(button10);
+    	
     	setContentView(linearLayout);
     }
 }
