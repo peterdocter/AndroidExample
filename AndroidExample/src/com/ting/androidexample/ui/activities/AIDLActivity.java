@@ -1,5 +1,6 @@
 package com.ting.androidexample.ui.activities;
 
+import com.ting.androidexample.services.AIDLService;
 import com.ting.androidexample.services.IAIDLService;
 
 import android.app.Activity;
@@ -42,6 +43,7 @@ public class AIDLActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		Intent intent = new Intent();
+		intent.setClass(getApplicationContext(), AIDLService.class);
 		bindService(intent, conn, Context.BIND_AUTO_CREATE);
 	}
 

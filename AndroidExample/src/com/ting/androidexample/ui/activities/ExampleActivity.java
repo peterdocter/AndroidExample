@@ -1,6 +1,7 @@
 package com.ting.androidexample.ui.activities;
 
 import android.app.Activity;
+import android.content.ComponentName;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -8,6 +9,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
 
 import com.ting.androidexample.R;
 
@@ -32,6 +34,9 @@ public class ExampleActivity extends Activity {
     }
     
     private void setupViews() {
+    	
+    	ScrollView scrollView = new ScrollView(this);
+    	
     	LinearLayout linearLayout = new LinearLayout(this);
     	linearLayout.setOrientation(LinearLayout.VERTICAL);
   
@@ -178,13 +183,31 @@ public class ExampleActivity extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				Intent intent = new Intent();
-				intent.setClass(getApplicationContext(), ResolveInfoActivity.class);
+//				intent.setClass(getApplicationContext(), ResolveInfoActivity.class);
+				intent.setComponent(new ComponentName("com.ting.androidexample", 
+						"com.ting.androidexample.ui.activities.ResolveInfoActivity"));
 				startActivity(intent);
 			}
     		
     	});
     	linearLayout.addView(button10);
+    
+    	//add button11
+    	Button button11 = new Button(this);
+    	button11.setText("AIDLActivity");
+    	button11.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View arg0) {
+				Intent intent = new Intent();
+				intent.setClass(getApplicationContext(), AIDLActivity.class);
+				startActivity(intent);
+			}
+    		
+    	});
+    	linearLayout.addView(button11);
     	
-    	setContentView(linearLayout);
+    	scrollView.addView(linearLayout);
+    	setContentView(scrollView);
     }
 }
