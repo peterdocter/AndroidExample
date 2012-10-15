@@ -207,6 +207,21 @@ public class ExampleActivity extends Activity {
     	});
     	linearLayout.addView(button11);
     	
+    	//add button12
+    	Button button12 = new Button(this);
+    	button12.setText("InnerReceiverActivity");
+    	button12.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View arg0) {
+				Intent intent = new Intent();
+				intent.setClass(getApplicationContext(), InnerReceiverActivity.class);
+				startActivity(intent);
+			}
+    		
+    	});
+    	linearLayout.addView(button12);
+    	
     	scrollView.addView(linearLayout);
     	setContentView(scrollView);
     }

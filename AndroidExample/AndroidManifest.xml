@@ -36,11 +36,20 @@
         <activity android:name=".ui.activities.ReflexActivity"/>
         <activity android:name=".ui.activities.KeyguardActivity"/>
         <activity android:name=".ui.activities.ResolveInfoActivity"/>
+        <activity android:name=".ui.activities.InnerReceiverActivity"/>
         
         <service android:name=".services.ClientService"/>
         <service android:name=".services.AIDLService"/>
         <service android:name=".services.LocalServerSocketService"/>
         <service android:name=".services.IntentServiceDemo"/>
+        <service android:name=".services.InnerReceiverService"/>
+        
+        <receiver android:name=".receivers.PackageRemoveReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
