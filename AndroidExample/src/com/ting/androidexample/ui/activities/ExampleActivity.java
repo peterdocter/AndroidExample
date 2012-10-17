@@ -222,6 +222,21 @@ public class ExampleActivity extends Activity {
     	});
     	linearLayout.addView(button12);
     	
+    	//add button13
+    	Button button13 = new Button(this);
+    	button13.setText("WebViewActivity");
+    	button13.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View arg0) {
+				Intent intent = new Intent();
+				intent.setClass(getApplicationContext(), WebViewActivity.class);
+				startActivity(intent);
+			}
+    		
+    	});
+    	linearLayout.addView(button13);
+    	
     	scrollView.addView(linearLayout);
     	setContentView(scrollView);
     }

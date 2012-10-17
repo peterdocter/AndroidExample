@@ -7,6 +7,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
     <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/> 
 
     <uses-sdk
         android:minSdkVersion="8"
@@ -37,6 +38,7 @@
         <activity android:name=".ui.activities.KeyguardActivity"/>
         <activity android:name=".ui.activities.ResolveInfoActivity"/>
         <activity android:name=".ui.activities.InnerReceiverActivity"/>
+        <activity android:name=".ui.activities.WebViewActivity"/>
         
         <service android:name=".services.ClientService"/>
         <service android:name=".services.AIDLService"/>
@@ -44,9 +46,15 @@
         <service android:name=".services.IntentServiceDemo"/>
         <service android:name=".services.InnerReceiverService"/>
         
-        <receiver android:name=".receivers.PackageRemoveReceiver">
+        <receiver android:name=".receivers.Receiver">
             <intent-filter>
-                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <intent-filter>
+              	<action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
                 <data android:scheme="package"/>
             </intent-filter>
         </receiver>
