@@ -10,6 +10,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
+import android.widget.TextView;
 
 import com.ting.androidexample.R;
 
@@ -236,6 +237,36 @@ public class ExampleActivity extends Activity {
     		
     	});
     	linearLayout.addView(button13);
+    	
+    	//add button14
+    	Button button14 = new Button(this);
+    	button14.setText("AccountActivity");
+    	button14.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View arg0) {
+				Intent intent = new Intent();
+				intent.setClass(getApplicationContext(), AccountActivity.class);
+				startActivity(intent);
+			}
+    		
+    	});
+    	linearLayout.addView(button14);
+    	
+    	//add button15
+    	Button button15 = new Button(this);
+    	button15.setText("VisitJarServiceActivity");
+    	button15.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View arg0) {
+				Intent intent = new Intent();
+				intent.setClass(getApplicationContext(), VisitJarServiceActivity.class);
+				startActivity(intent);
+			}
+    		
+    	});
+    	linearLayout.addView(button15);
     	
     	scrollView.addView(linearLayout);
     	setContentView(scrollView);

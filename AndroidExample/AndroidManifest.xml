@@ -8,6 +8,9 @@
     <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
     <uses-permission android:name="android.permission.VIBRATE"/>
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/> 
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCOUNT_MANAGER" />
 
     <uses-sdk
         android:minSdkVersion="8"
@@ -39,12 +42,15 @@
         <activity android:name=".ui.activities.ResolveInfoActivity"/>
         <activity android:name=".ui.activities.InnerReceiverActivity"/>
         <activity android:name=".ui.activities.WebViewActivity"/>
+        <activity android:name=".ui.activities.AccountActivity"/>
+        <activity android:name=".ui.activities.VisitJarServiceActivity"/>
         
         <service android:name=".services.ClientService"/>
         <service android:name=".services.AIDLService"/>
         <service android:name=".services.LocalServerSocketService"/>
         <service android:name=".services.IntentServiceDemo"/>
         <service android:name=".services.InnerReceiverService"/>
+        <service android:name=".services.JarService"/>
         
         <receiver android:name=".receivers.Receiver">
             <intent-filter>

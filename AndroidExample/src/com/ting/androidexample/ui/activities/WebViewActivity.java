@@ -6,6 +6,10 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
+/**
+ * @author tingzi [zhangjieting@gmail.com]
+ * 
+ */
 public class WebViewActivity extends Activity {
 
 	@Override
