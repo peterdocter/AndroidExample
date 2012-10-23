@@ -146,7 +146,7 @@ public class ExampleActivity extends Activity {
     	linearLayout.addView(button7);
     	
     	//add button8
-    	Button button8 = new Button(this);
+/*    	Button button8 = new Button(this);
     	button8.setText("ReflexActivity");
     	button8.setOnClickListener(new OnClickListener() {
 
@@ -158,7 +158,7 @@ public class ExampleActivity extends Activity {
 			}
     		
     	});
-    	linearLayout.addView(button8);
+    	linearLayout.addView(button8);*/
     	
     	//add button9
     	Button button9 = new Button(this);
@@ -238,7 +238,7 @@ public class ExampleActivity extends Activity {
     	linearLayout.addView(button13);
     	
     	//add button14
-    	Button button14 = new Button(this);
+/*    	Button button14 = new Button(this);
     	button14.setText("AccountActivity");
     	button14.setOnClickListener(new OnClickListener() {
 
@@ -250,7 +250,7 @@ public class ExampleActivity extends Activity {
 			}
     		
     	});
-    	linearLayout.addView(button14);
+    	linearLayout.addView(button14);*/
     	
     	//add button15
     	Button button15 = new Button(this);
