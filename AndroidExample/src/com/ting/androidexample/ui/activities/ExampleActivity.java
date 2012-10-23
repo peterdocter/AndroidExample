@@ -10,7 +10,6 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
-import android.widget.TextView;
 
 import com.ting.androidexample.R;
 
@@ -267,6 +266,21 @@ public class ExampleActivity extends Activity {
     		
     	});
     	linearLayout.addView(button15);
+    	
+    	//add button16
+    	Button button16 = new Button(this);
+    	button16.setText("NetworkActivity");
+    	button16.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View arg0) {
+				Intent intent = new Intent();
+				intent.setClass(getApplicationContext(), NetworkActivity.class);
+				startActivity(intent);
+			}
+    		
+    	});
+    	linearLayout.addView(button16);
     	
     	scrollView.addView(linearLayout);
     	setContentView(scrollView);

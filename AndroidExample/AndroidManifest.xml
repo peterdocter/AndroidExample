@@ -4,6 +4,7 @@
     android:versionName="1.0" >
     
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
     <uses-permission android:name="android.permission.VIBRATE"/>
@@ -44,6 +45,8 @@
         <activity android:name=".ui.activities.WebViewActivity"/>
         <activity android:name=".ui.activities.AccountActivity"/>
         <activity android:name=".ui.activities.VisitJarServiceActivity"/>
+        <activity android:name=".ui.activities.SettingsActivity"/>
+        <activity android:name=".ui.activities.NetworkActivity"/>
         
         <service android:name=".services.ClientService"/>
         <service android:name=".services.AIDLService"/>
