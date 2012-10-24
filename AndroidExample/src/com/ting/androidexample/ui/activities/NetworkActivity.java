@@ -156,7 +156,7 @@ public class NetworkActivity extends Activity {
 
     // Displays an error if the app is unable to load content.
     private void showErrorPage() {
-        setContentView(R.layout.main);
+        setContentView(R.layout.network_activity_main);
 
         // The specified network connection is not available. Displays error message.
         WebView myWebView = (WebView) findViewById(R.id.webview);
@@ -204,7 +204,7 @@ public class NetworkActivity extends Activity {
 
         @Override
         protected void onPostExecute(String result) {
-            setContentView(R.layout.main);
+            setContentView(R.layout.network_activity_main);
             // Displays the HTML string in the UI via a WebView
             WebView myWebView = (WebView) findViewById(R.id.webview);
             myWebView.loadData(result, "text/html", null);
