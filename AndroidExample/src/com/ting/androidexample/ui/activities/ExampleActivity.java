@@ -297,6 +297,22 @@ public class ExampleActivity extends Activity {
     	});
     	linearLayout.addView(button17);
     	
+    	//add button18
+    	Button button18 = new Button(this);
+    	button18.setText("RestartServiceActivity");
+    	button18.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View arg0) {
+				Intent intent = new Intent();
+				intent.setClass(getApplicationContext(), RestartServiceActivity.class);
+				startActivity(intent);
+			}
+    		
+    	});
+    	linearLayout.addView(button18);
+    	
+    	
     	scrollView.addView(linearLayout);
     	setContentView(scrollView);
     }

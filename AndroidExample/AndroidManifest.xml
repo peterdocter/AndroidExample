@@ -49,6 +49,7 @@
         <activity android:name=".ui.activities.SettingsActivity"/>
         <activity android:name=".ui.activities.NetworkActivity"/>
         <activity android:name=".ui.activities.LocationActivity"/>
+        <activity android:name=".ui.activities.RestartServiceActivity"/>
         
         <service android:name=".services.ClientService"/>
         <service android:name=".services.AIDLService"/>
@@ -56,6 +57,7 @@
         <service android:name=".services.IntentServiceDemo"/>
         <service android:name=".services.InnerReceiverService"/>
         <service android:name=".services.JarService"/>
+        <service android:name=".services.SelfRestartService"/>
         
         <receiver android:name=".receivers.Receiver">
             <intent-filter>
