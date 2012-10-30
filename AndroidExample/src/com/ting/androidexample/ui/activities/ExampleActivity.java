@@ -312,6 +312,20 @@ public class ExampleActivity extends Activity {
     	});
     	linearLayout.addView(button18);
     	
+    	//add button19
+    	Button button19 = new Button(this);
+    	button19.setText("StorageActivity");
+    	button19.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View arg0) {
+				Intent intent = new Intent(getApplicationContext(), StorageActivity.class);
+				startActivity(intent);
+			}
+    		
+    	});
+    	linearLayout.addView(button19);
+    	
     	
     	
     	scrollView.addView(linearLayout);
