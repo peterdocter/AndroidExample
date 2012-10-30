@@ -50,7 +50,8 @@
         <activity android:name=".ui.activities.NetworkActivity"/>
         <activity android:name=".ui.activities.LocationActivity"/>
         <activity android:name=".ui.activities.RestartServiceActivity"/>
-         <activity android:name=".ui.activities.StorageActivity"/>
+        <activity android:name=".ui.activities.StorageActivity"/>
+        <activity android:name=".ui.activities.GsonActivity"/>
         
         <service android:name=".services.ClientService"/>
         <service android:name=".services.AIDLService"/>

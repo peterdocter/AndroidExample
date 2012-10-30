@@ -326,7 +326,19 @@ public class ExampleActivity extends Activity {
     	});
     	linearLayout.addView(button19);
     	
-    	
+    	//add button20
+    	Button button20 = new Button(this);
+    	button20.setText("GsonActivity");
+    	button20.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View arg0) {
+				Intent intent = new Intent(getApplicationContext(), GsonActivity.class);
+				startActivity(intent);
+			}
+    		
+    	});
+    	linearLayout.addView(button20);
     	
     	scrollView.addView(linearLayout);
     	setContentView(scrollView);
