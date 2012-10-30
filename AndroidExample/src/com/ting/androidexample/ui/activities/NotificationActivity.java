@@ -14,6 +14,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 
 import com.ting.androidexample.R;
+import com.ting.androidexample.util.Constants;
 
 /**
  * @author tingzi [zhangjieting@gmail.com]
@@ -87,9 +88,10 @@ public class NotificationActivity extends Activity {
 		PendingIntent contentIntent = PendingIntent.getActivity(context, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
 		notification.contentIntent = contentIntent;*/
 		
-		//add deleteIntent
-		intent = new Intent("delete");
-		PendingIntent deleteIntent = PendingIntent.getActivity(context, 0, intent, 0);
+		//add deleteIntent 
+		intent = new Intent(Constants.RECEIVER_ACTION);     	
+		intent.putExtra("delete", "delete");
+		PendingIntent deleteIntent = PendingIntent.getBroadcast(context, 0, intent, 0);
 		notification.deleteIntent = deleteIntent;
 		
 		//add notification id

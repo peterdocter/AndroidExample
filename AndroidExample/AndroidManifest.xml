@@ -64,6 +64,7 @@
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
                 <action android:name="android.intent.action.ACTION_SHUTDOWN"/>
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="com.ting.action.SEND_INTENT"/>
             </intent-filter>
             <intent-filter>
               	<action android:name="android.intent.action.PACKAGE_REMOVED"/>

@@ -2,12 +2,14 @@ package com.ting.androidexample.receivers;
 
 import com.ting.androidexample.services.AIDLService;
 import com.ting.androidexample.services.ClientService;
+import com.ting.androidexample.util.Constants;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.util.Log;
+import android.widget.Toast;
 
 public class Receiver extends BroadcastReceiver {
 
@@ -35,6 +37,9 @@ public class Receiver extends BroadcastReceiver {
 			 Intent intent1 = new Intent();
 			 intent1.setClass(context, AIDLService.class);
 			 context.startService(intent1);
+		 }else if (action.equals(Constants.RECEIVER_ACTION)) {
+			 Log.d(TAG , "Constants.RECEIVER_ACTION");
+			 Toast.makeText(context, "Constants.RECEIVER_ACTION", Toast.LENGTH_LONG).show();
 		 }
 	}
 

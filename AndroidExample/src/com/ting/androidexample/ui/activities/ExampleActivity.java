@@ -313,6 +313,7 @@ public class ExampleActivity extends Activity {
     	linearLayout.addView(button18);
     	
     	
+    	
     	scrollView.addView(linearLayout);
     	setContentView(scrollView);
     }
