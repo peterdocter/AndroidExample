@@ -52,6 +52,7 @@
         <activity android:name=".ui.activities.RestartServiceActivity"/>
         <activity android:name=".ui.activities.StorageActivity"/>
         <activity android:name=".ui.activities.GsonActivity"/>
+        <activity android:name=".ui.activities.PathActivity"/>
         
         <service android:name=".services.ClientService"/>
         <service android:name=".services.AIDLService"/>

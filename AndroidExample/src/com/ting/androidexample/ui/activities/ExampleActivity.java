@@ -340,6 +340,20 @@ public class ExampleActivity extends Activity {
     	});
     	linearLayout.addView(button20);
     	
+    	//add button21
+    	Button button21 = new Button(this);
+    	button21.setText("PathActivity");
+    	button21.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View arg0) {
+				Intent intent = new Intent(getApplicationContext(), PathActivity.class);
+				startActivity(intent);
+			}
+    		
+    	});
+    	linearLayout.addView(button21);
+    	
     	scrollView.addView(linearLayout);
     	setContentView(scrollView);
     }
