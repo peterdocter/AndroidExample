@@ -53,7 +53,8 @@
         <activity android:name=".ui.activities.StorageActivity"/>
         <activity android:name=".ui.activities.GsonActivity"/>
         <activity android:name=".ui.activities.PathActivity"/>
-         <activity android:name=".ui.activities.ZipActivity"/>
+        <activity android:name=".ui.activities.ZipActivity"/>
+        <activity android:name=".ui.activities.HttpActivity"/>
         
         <service android:name=".services.ClientService"/>
         <service android:name=".services.AIDLService"/>
