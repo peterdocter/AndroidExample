@@ -354,6 +354,20 @@ public class ExampleActivity extends Activity {
     	});
     	linearLayout.addView(button21);
     	
+    	//add button22
+    	Button button22 = new Button(this);
+    	button22.setText("ZipActivity");
+    	button22.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View arg0) {
+				Intent intent = new Intent(getApplicationContext(), ZipActivity.class);
+				startActivity(intent);
+			}
+    		
+    	});
+    	linearLayout.addView(button22);
+    	
     	scrollView.addView(linearLayout);
     	setContentView(scrollView);
     }
