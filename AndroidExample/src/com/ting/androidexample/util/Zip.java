@@ -51,7 +51,7 @@ public class Zip {
              os.close();    
          }
          zfile.close();
-         Log.d("upZipFile", "finishssssssssssssssssssss");
+         Log.d("upZipFile", "finish");
          return 0;
      }
  

@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class HttpActivity extends BaseActivity {
 	
-	private static final String url = "http://pan.baidu.com/share/link?shareid=120760&uk=2047143133";
+	private static final String url = "https://github.com/tingzi/NodeExample/archive/master.zip";
 	
 	@Override
 	protected void setupButtons() {
@@ -32,7 +32,7 @@ public class HttpActivity extends BaseActivity {
 			@Override
 			public void onClick(View v) {
 				HttpGetToFileTask task = new HttpGetToFileTask();
-				task.execute(url, getFilesDir().getParent() + "/test.zip");
+				task.execute(url, getFilesDir().getParent() + "/master.zip");
 			}
 			
 		});
