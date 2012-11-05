@@ -1,6 +1,7 @@
 package com.ting.androidexample.ui.activities;
 
-import com.ting.androidexample.util.HttpGetTask;
+import com.ting.androidexample.http.HttpGetTask;
+import com.ting.androidexample.http.HttpGetToFileTask;
 
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -21,6 +22,17 @@ public class HttpActivity extends BaseActivity {
 			public void onClick(View v) {
 				HttpGetTask task = new HttpGetTask();
 				task.execute(url);
+			}
+			
+		});
+		
+		Button button1 = addButton("下载并保存到文件");
+		button1.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				HttpGetToFileTask task = new HttpGetToFileTask();
+				task.execute(url, getFilesDir().getParent() + "/test.zip");
 			}
 			
 		});

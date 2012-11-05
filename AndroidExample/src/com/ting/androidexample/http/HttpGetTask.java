@@ -1,4 +1,4 @@
-package com.ting.androidexample.util;
+package com.ting.androidexample.http;
 
 import java.io.IOException;
 
@@ -19,15 +19,18 @@ public class HttpGetTask extends AsyncTask<String, Object, String> {
 
 	@Override
 	protected String doInBackground(String... params) {
+		return doGet(params[0]);
+	}
+	
+	public String doGet(String url) {
 		String result = null;
 
 		try {
-			HttpGet httpGet = new HttpGet(params[0]);
+			HttpGet httpGet = new HttpGet(url);
 			HttpResponse response = new DefaultHttpClient().execute(httpGet);
 			if (response.getStatusLine().getStatusCode() == 200) {
 				HttpEntity entity = response.getEntity();
 				result = EntityUtils.toString(entity, HTTP.UTF_8);
-
 			}
 		} catch (ClientProtocolException e) {
 			e.printStackTrace();
@@ -41,7 +44,7 @@ public class HttpGetTask extends AsyncTask<String, Object, String> {
 	@Override
 	protected void onPostExecute(String result) {
 		super.onPostExecute(result);
-
+		
 		Log.d(TAG, "result:" + result);
 	}
 
