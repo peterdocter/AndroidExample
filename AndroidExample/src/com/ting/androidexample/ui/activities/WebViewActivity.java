@@ -45,9 +45,7 @@ public class WebViewActivity extends Activity {
 					
 			@Override
 			public boolean shouldOverrideUrlLoading(WebView view, String url) {
-				mWebView.loadUrl(url);
-		//		view.loadUrl(url);   //在当前的webview中跳转到新的url
-				return true;
+				return false;
 			}
 		});
 		
