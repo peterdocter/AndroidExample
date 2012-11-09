@@ -314,12 +314,12 @@ public class ExampleActivity extends Activity {
     	
     	//add button19
     	Button button19 = new Button(this);
-    	button19.setText("StorageActivity");
+    	button19.setText("FileActivity");
     	button19.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View arg0) {
-				Intent intent = new Intent(getApplicationContext(), StorageActivity.class);
+				Intent intent = new Intent(getApplicationContext(), FileActivity.class);
 				startActivity(intent);
 			}
     		
@@ -381,6 +381,20 @@ public class ExampleActivity extends Activity {
     		
     	});
     	linearLayout.addView(button23);
+    	
+    	//add button24
+    	Button button24 = new Button(this);
+    	button24.setText("StatFsActivity");
+    	button24.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View arg0) {
+				Intent intent = new Intent(getApplicationContext(), StatFsActivity.class);
+				startActivity(intent);
+			}
+    		
+    	});
+    	linearLayout.addView(button24);
     	
     	scrollView.addView(linearLayout);
     	setContentView(scrollView);

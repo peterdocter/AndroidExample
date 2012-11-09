@@ -50,11 +50,12 @@
         <activity android:name=".ui.activities.NetworkActivity"/>
         <activity android:name=".ui.activities.LocationActivity"/>
         <activity android:name=".ui.activities.RestartServiceActivity"/>
-        <activity android:name=".ui.activities.StorageActivity"/>
+        <activity android:name=".ui.activities.FileActivity"/>
         <activity android:name=".ui.activities.GsonActivity"/>
         <activity android:name=".ui.activities.PathActivity"/>
         <activity android:name=".ui.activities.ZipActivity"/>
         <activity android:name=".ui.activities.HttpActivity"/>
+        <activity android:name=".ui.activities.StatFsActivity"/>
         
         <service android:name=".services.ClientService"/>
         <service android:name=".services.AIDLService"/>
