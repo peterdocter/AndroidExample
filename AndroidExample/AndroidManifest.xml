@@ -13,6 +13,7 @@
     <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
     <uses-permission android:name="android.permission.ACCOUNT_MANAGER" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <uses-sdk
         android:minSdkVersion="8"
@@ -56,6 +57,7 @@
         <activity android:name=".ui.activities.ZipActivity"/>
         <activity android:name=".ui.activities.HttpActivity"/>
         <activity android:name=".ui.activities.StatFsActivity"/>
+        <activity android:name=".ui.activities.SimActivity"/>
         
         <service android:name=".services.ClientService"/>
         <service android:name=".services.AIDLService"/>

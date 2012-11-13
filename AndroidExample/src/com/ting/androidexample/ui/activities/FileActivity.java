@@ -20,7 +20,10 @@ public class FileActivity extends Activity {
 		testFileStorage();
 		
 		long size = FileUtil.getFileOrDirSize("/data/data/com.ting.androidexample/");
-		Log.d(TAG, "file size:" + ((double)size/(1024*1024)) + "M");
+		Log.d(TAG, "/data/data/com.ting.androidexample/ size:" + ((double)size/(1024*1024)) + "M");
+		
+		long databasesize = FileUtil.getFileOrDirSize("/data/data/com.ting.androidexample/databases/");
+		Log.d(TAG, "/data/data/com.ting.androidexample/databases/ size:" + ((double)databasesize/(1024*1024)) + "M");
 	}
 
 	@SuppressLint("NewApi")

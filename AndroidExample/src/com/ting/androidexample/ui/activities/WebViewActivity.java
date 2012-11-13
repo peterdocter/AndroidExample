@@ -1,5 +1,6 @@
 package com.ting.androidexample.ui.activities;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
@@ -51,6 +52,7 @@ public class WebViewActivity extends Activity {
 		
 	}
 
+	@SuppressLint("NewApi") 
 	private void setWebSettings() {
 		WebSettings webSettings = mWebView.getSettings();
 		//enable application cache
@@ -58,6 +60,7 @@ public class WebViewActivity extends Activity {
 		webSettings.setAppCacheEnabled(true);
 		//enable javascript
 		webSettings.setJavaScriptEnabled(true);
+		webSettings.setEnableSmoothTransition(true);
 		
 	}
 
