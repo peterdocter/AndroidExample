@@ -417,8 +417,7 @@ public class ExampleActivity extends Activity {
 
 			@Override
 			public void onClick(View arg0) {
-			//	Intent intent = new Intent(getApplicationContext(), PermissionActivity.class);
-				Intent intent = new Intent("com.ting.intent.action.START_PERMISSION_ACTIVITY");
+				Intent intent = new Intent(getApplicationContext(), PermissionActivity.class);
 				startActivity(intent);
 			}
     		
