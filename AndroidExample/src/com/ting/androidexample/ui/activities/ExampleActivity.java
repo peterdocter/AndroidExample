@@ -410,6 +410,21 @@ public class ExampleActivity extends Activity {
     	});
     	linearLayout.addView(button25);
     	
+    	//add button26
+    	Button button26 = new Button(this);
+    	button26.setText("PermissionActivity");
+    	button26.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View arg0) {
+			//	Intent intent = new Intent(getApplicationContext(), PermissionActivity.class);
+				Intent intent = new Intent("com.ting.intent.action.START_PERMISSION_ACTIVITY");
+				startActivity(intent);
+			}
+    		
+    	});
+    	linearLayout.addView(button26);
+    	
     	scrollView.addView(linearLayout);
     	setContentView(scrollView);
     }

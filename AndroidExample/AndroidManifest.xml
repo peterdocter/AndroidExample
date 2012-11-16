@@ -3,6 +3,10 @@
     android:versionCode="1"
     android:versionName="1.0" >
     
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+    
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
@@ -15,9 +19,7 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
-    <uses-sdk
-        android:minSdkVersion="8"
-        android:targetSdkVersion="15" />
+    <permission android:name="com.ting.permission.START_PERMISSION_ACTIVITY" android:protectionLevel="normal"></permission>
 
     <application
         android:icon="@drawable/ic_launcher"
@@ -58,6 +60,14 @@
         <activity android:name=".ui.activities.HttpActivity"/>
         <activity android:name=".ui.activities.StatFsActivity"/>
         <activity android:name=".ui.activities.SimActivity"/>
+        <activity android:name=".ui.activities.PermissionActivity" 
+            android:label="@string/PermissionActivity"
+            android:permission="com.ting.permission.START_PERMISSION_ACTIVITY">
+        	<intent-filter>
+        	    <action android:name="com.ting.intent.action.START_PERMISSION_ACTIVITY"/>
+        	    <category android:name="android.intent.category.DEFAULT"/>T
+        	</intent-filter>
+        </activity>
         
         <service android:name=".services.ClientService"/>
         <service android:name=".services.AIDLService"/>
