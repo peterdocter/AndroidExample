@@ -424,6 +424,20 @@ public class ExampleActivity extends Activity {
     	});
     	linearLayout.addView(button26);
     	
+    	//add button27
+    	Button button27 = new Button(this);
+    	button27.setText("ProcessServiceActivity");
+    	button27.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View arg0) {
+				Intent intent = new Intent(getApplicationContext(), ProcessServiceActivity.class);
+				startActivity(intent);
+			}
+    		
+    	});
+    	linearLayout.addView(button27);
+    	
     	scrollView.addView(linearLayout);
     	setContentView(scrollView);
     }
