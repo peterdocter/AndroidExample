@@ -69,6 +69,7 @@
         	</intent-filter>
         </activity>
         <activity android:name=".ui.activities.ProcessServiceActivity"/>
+        <activity android:name=".ui.activities.AssetActivity"/>
         
         <service android:name=".services.ClientService"/>
         <service android:name=".services.AIDLService"/>
