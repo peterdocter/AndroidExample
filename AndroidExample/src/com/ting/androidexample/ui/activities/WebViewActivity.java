@@ -5,6 +5,8 @@ import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.webkit.JsResult;
+import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -26,8 +28,23 @@ public class WebViewActivity extends Activity {
 		setupViews();
 		
 		setWebViewClient();
+		setWebChromeClient();
 		
 		setWebSettings();
+	}
+
+	private void setWebChromeClient() {
+		mWebView.setWebChromeClient(new WebChromeClient() {
+
+			//enable alert
+			@Override
+			public boolean onJsAlert(WebView view, String url, String message,
+					JsResult result) {
+				return super.onJsAlert(view, url, message, result);
+			}
+
+		});
+		
 	}
 
 	private void setupViews() {

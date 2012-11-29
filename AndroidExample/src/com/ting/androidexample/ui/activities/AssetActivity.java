@@ -20,16 +20,16 @@ public class AssetActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
-//		getAssetPath(this);
+		getAssetPath(this);
 		
-		dumpNoRecursive(this, "visitAsset");
+//		dumpNoRecursive(this, "visitAsset");
 		
 	}
 
 	private void getAssetPath(Context context) {
 		AssetManager am = context.getAssets();
 		try {
-			String[] paths = am.list("www");
+			String[] paths = am.list("");
 			for(String path: paths) {
 				Log.d(TAG, "path:" + path);
 			}
