@@ -65,11 +65,14 @@
             android:permission="com.ting.permission.START_PERMISSION_ACTIVITY">
         	<intent-filter>
         	    <action android:name="com.ting.intent.action.START_PERMISSION_ACTIVITY"/>
-        	    <category android:name="android.intent.category.DEFAULT"/>T
+        	    <category android:name="android.intent.category.DEFAULT"/>
         	</intent-filter>
         </activity>
         <activity android:name=".ui.activities.ProcessServiceActivity"/>
         <activity android:name=".ui.activities.AssetActivity"/>
+        <activity android:name=".ui.activities.ExportedActivity"
+            android:exported="false">
+        </activity>
         
         <service android:name=".services.ClientService"/>
         <service android:name=".services.AIDLService"/>

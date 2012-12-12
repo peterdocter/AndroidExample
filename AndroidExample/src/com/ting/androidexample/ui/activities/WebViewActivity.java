@@ -50,8 +50,8 @@ public class WebViewActivity extends Activity {
 	private void setupViews() {
 		mWebView = new WebView(this);
 		//经过了百度转码工具：http://gate.baidu.com/
-//		mWebView.loadUrl("http://gate.baidu.com/tc?bd_page_type=1&src=http%3A%2F%2Fwww.ruanyifeng.com%2Fblog%2Fnav%2Findex1.html");
-		mWebView.loadUrl("file:///android_asset/www/index.html");
+		mWebView.loadUrl("http://gate.baidu.com/tc?bd_page_type=1&src=http%3A%2F%2Fwww.ruanyifeng.com%2Fblog%2Fnav%2Findex1.html");
+//		mWebView.loadUrl("file:///android_asset/www/index.html");
 		mWebView.setVerticalScrollBarEnabled(false);
 		mWebView.addJavascriptInterface(new Object() {
 			public String getSystemType() {
