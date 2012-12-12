@@ -71,7 +71,7 @@
         <activity android:name=".ui.activities.ProcessServiceActivity"/>
         <activity android:name=".ui.activities.AssetActivity"/>
         <activity android:name=".ui.activities.ExportedActivity"
-            android:exported="false">
+            android:exported="true">
         </activity>
         
         <service android:name=".services.ClientService"/>
