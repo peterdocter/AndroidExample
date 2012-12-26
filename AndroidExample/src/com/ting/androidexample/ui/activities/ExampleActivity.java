@@ -452,6 +452,20 @@ public class ExampleActivity extends Activity {
     	});
     	linearLayout.addView(button28);
     	
+    	//add button29
+    	Button button29 = new Button(this);
+    	button29.setText("StartWebsiteActivity");
+    	button29.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View arg0) {
+				Intent intent = new Intent(getApplicationContext(), StartWebsiteActivity.class);
+				startActivity(intent);
+			}
+    		
+    	});
+    	linearLayout.addView(button29);
+    	
     	scrollView.addView(linearLayout);
     	setContentView(scrollView);
     }
