@@ -1,19 +1,20 @@
 package com.ting.androidexample.ui.activities;
 
+import com.ting.androidexample.services.IntentServiceDemo;
+
 import android.app.Activity;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 
-public class StartWebsiteActivity extends Activity {
+public class StartIntentServiceActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-
-		Intent it = new Intent(Intent.ACTION_VIEW, Uri.parse("http://172.22.133.34/index.html"));
-		startActivity(it);
-
+		
+		Intent intent = new Intent(this, IntentServiceDemo.class);
+		startService(intent);
+		
 	}
 
 	

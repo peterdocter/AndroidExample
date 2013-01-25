@@ -18,6 +18,8 @@
     <uses-permission android:name="android.permission.ACCOUNT_MANAGER" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>   
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/> 
 
     <permission android:name="com.ting.permission.START_PERMISSION_ACTIVITY" android:protectionLevel="normal"></permission>
 
@@ -74,6 +76,9 @@
            >
         </activity>
         <activity android:name=".ui.activities.StartWebsiteActivity"/>
+        <activity android:name=".ui.activities.StartIntentServiceActivity"/>
+        <activity android:name=".ui.activities.NewThreadActivity"/>
+        <activity android:name=".ui.activities.PendingIntentActivity"/>
         
         <service android:name=".services.ClientService"/>
         <service android:name=".services.AIDLService"/>

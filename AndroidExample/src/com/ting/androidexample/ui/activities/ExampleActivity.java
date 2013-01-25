@@ -466,6 +466,48 @@ public class ExampleActivity extends Activity {
     	});
     	linearLayout.addView(button29);
     	
+    	//add button30
+    	Button button30 = new Button(this);
+    	button30.setText("StartIntentServiceActivity");
+    	button30.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View arg0) {
+				Intent intent = new Intent(getApplicationContext(), StartIntentServiceActivity.class);
+				startActivity(intent);
+			}
+    		
+    	});
+    	linearLayout.addView(button30);
+    	
+    	//add button31
+    	Button button31 = new Button(this);
+    	button31.setText("NewThreadActivity");
+    	button31.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View arg0) {
+				Intent intent = new Intent(getApplicationContext(), NewThreadActivity.class);
+				startActivity(intent);
+			}
+    		
+    	});
+    	linearLayout.addView(button31);
+    	
+    	//add button32
+    	Button button32 = new Button(this);
+    	button32.setText("PendingIntentActivity");
+    	button32.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View arg0) {
+				Intent intent = new Intent(getApplicationContext(), PendingIntentActivity.class);
+				startActivity(intent);
+			}
+    		
+    	});
+    	linearLayout.addView(button32);
+    	
     	scrollView.addView(linearLayout);
     	setContentView(scrollView);
     }
