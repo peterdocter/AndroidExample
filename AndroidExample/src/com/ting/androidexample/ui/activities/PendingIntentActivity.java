@@ -6,7 +6,6 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.net.Uri;
 import android.os.Bundle;
 import android.telephony.SmsManager;
 import android.util.Log;
@@ -31,16 +30,28 @@ public class PendingIntentActivity extends Activity {
 		createReceiver(this);
 		
 		SmsManager smsManager = SmsManager.getDefault();
-		
-		Intent intent = new Intent(SENT_SMS_ACTION);
-		intent.putExtra("uri", "content://intent/test");
-		PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 0, intent, PendingIntent.FLAG_CANCEL_CURRENT);
-		smsManager.sendTextMessage("13811200985", null, "test", pendingIntent, null);
-		
+				
 		Intent intent1 = new Intent(SENT_SMS_ACTION);
-		intent.putExtra("uri", "content://intent/testtest");
-		PendingIntent pendingIntent1 = PendingIntent.getBroadcast(this, 0, intent1, 0);
-		smsManager.sendTextMessage("13811200985", null, "testtest", pendingIntent1, null);
+		intent1.putExtra("uri", "content://intent/intent1");
+		PendingIntent pendingIntent1 = PendingIntent.getBroadcast(this, intent1.hashCode(), intent1, PendingIntent.FLAG_UPDATE_CURRENT);
+		
+		Intent intent2 = new Intent(DELIVERY_SMS_ACTION);
+		intent2.putExtra("uri", "content://intent/intent2");
+		PendingIntent pendingIntent2 = PendingIntent.getBroadcast(this, intent2.hashCode(), intent2, PendingIntent.FLAG_UPDATE_CURRENT);
+		
+		smsManager.sendTextMessage("13811223985", null, "12", pendingIntent1, pendingIntent2);
+
+		
+		Intent intent3 = new Intent(SENT_SMS_ACTION);
+		intent3.putExtra("uri", "content://intent/intent3");
+		PendingIntent pendingIntent3 = PendingIntent.getBroadcast(this, intent3.hashCode(), intent3, PendingIntent.FLAG_UPDATE_CURRENT);
+		
+		Intent intent4 = new Intent(DELIVERY_SMS_ACTION);
+		intent4.putExtra("uri", "content://intent/intent4");
+		PendingIntent pendingIntent4 = PendingIntent.getBroadcast(this, intent4.hashCode(), intent4, PendingIntent.FLAG_UPDATE_CURRENT);
+		
+		smsManager.sendTextMessage("13811223985", null, "34", pendingIntent3, pendingIntent4);
+
 	}
 
 	private void createReceiver(Context context) {
